@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <title>St. Theresita's Academy</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+<body>
+    <header>
+        <a href="#" class="logo">St. Theresita's Academy</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#sec">Announcements</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="assets/img/sky-background.jpg" id="sky">
+        <img src="assets/img/clouds.png" id="clouds">
+        <img src="assets/img/sta-facade.png" id="facade">
+        <h2 id="text">St. Theresita's Academy of Silay City, Inc.</h2>
+        <a href="#sec" id="btn"></a>
+        <img src="assets/img/students.png" id="students" />
+    </section>
+    <div class="sec" id="sec">
+        <h2>Announcements</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, harum? 
+            Eligendi necessitatibus deserunt similique accusantium mollitia molestias temporibus 
+            unde! Quas voluptate earum, voluptatem corrupti odit aliquam provident maiores nulla tempore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, harum? 
+            Eligendi necessitatibus deserunt similique accusantium mollitia molestias temporibus 
+            unde! Quas voluptate earum, voluptatem corrupti odit aliquam provident maiores nulla tempore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, harum? 
+            Eligendi necessitatibus deserunt similique accusantium mollitia molestias temporibus 
+            unde! Quas voluptate earum, voluptatem corrupti odit aliquam provident maiores nulla tempore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, harum? 
+            Eligendi necessitatibus deserunt similique accusantium mollitia molestias temporibus 
+            unde! Quas voluptate earum, voluptatem corrupti odit aliquam provident maiores nulla tempore?
+        <br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, harum? 
+            Eligendi necessitatibus deserunt similique accusantium mollitia molestias temporibus 
+            unde! Quas voluptate earum, voluptatem corrupti odit aliquam provident maiores nulla tempore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, harum? 
+            Eligendi necessitatibus deserunt similique accusantium mollitia molestias temporibus 
+            unde! Quas voluptate earum, voluptatem corrupti odit aliquam provident maiores nulla tempore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, harum? 
+            Eligendi necessitatibus deserunt similique accusantium mollitia molestias temporibus 
+            unde! Quas voluptate earum, voluptatem corrupti odit aliquam provident maiores nulla tempore?</p>
+    </div>
+
+    <script>
+        let sky = document.getElementById('sky');
+        let clouds = document.getElementById('clouds');
+        let facade = document.getElementById('facade');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let students = document.getElementById('students');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            sky.style.top = value * 0.25 + 'px';
+            clouds.style.top = value * 1.05 + 'px';
+            facade.style.top = value * 0.5 + 'px';
+            students.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 3.6 + 'px';
+            text.style.marginTop = value * 1.05 + 'px';
+        })
+    </script>
+</body>
+</html> 
