@@ -9,7 +9,8 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(#2b1055, #7597de);
+    background: linear-gradient(#2b1055, 
+    #7597de);
     overflow-x: hidden;
 }
 
@@ -22,7 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(#160138a9, #7596de00);
+    background: linear-gradient(#160138a9, 
+    #7596de00);
     z-index: 10000;
 }
 
@@ -46,26 +48,8 @@ header ul li {
     margin-left: 20px;
 }
 
-/*
 header ul li a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #fff;
-    border-radius: 20px;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-
-header ul li a:hover,
-header ul li a.active {
-    box-shadow: inset 200px 0 0 0 #ffffff;
-    color: #2b1055;
-}
-*/
-
-header ul li a {
-    background-image: linear-gradient(
-      to right,
+    background-image: linear-gradient(to right,
       #00f7ff,
       #00f7ff 50%,
       #ffffff 50%
@@ -117,7 +101,9 @@ section:before {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(0deg, #0a0142fb 0%, #ffffff00 100%);
+    background: linear-gradient(0deg, 
+    #0a0142fb 0%, 
+    #ffffff00 100%);
     z-index: 1000;
 }
 section img {
