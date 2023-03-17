@@ -15,5 +15,4 @@ function scrollFunction() {
             text.style.marginRight = value * 3.6 + 'px';
             text.style.marginTop = value * 1.05 + 'px';
         })
-
 }
