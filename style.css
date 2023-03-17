@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(#160138a9, #7596de00);
     z-index: 10000;
 }
 
@@ -73,7 +74,7 @@ section:before {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(0deg, #0a0142fb, #ffffff00, transparent);
+    background: linear-gradient(0deg, #0a0142fb 0%, #ffffff00 100%);
     z-index: 1000;
 }
 section img {
@@ -133,4 +134,17 @@ section img#students {
 .sec p {
     font-size: 1em;
     color: #fff;
+}
+
+@keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); }
+    }
+
+.students {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
