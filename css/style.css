@@ -92,7 +92,7 @@ section img#logo {
 }
 
 section img#students {
-    z-index: 10;
+    z-index: 0;
 }
 #text {
     position: absolute;
