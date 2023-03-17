@@ -1,9 +1,12 @@
 <!DOCTYPE html>
     <head>
         <title>St. Theresita's Academy</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <script src="js/index.js"></script>
+
     </head>
-<body>
+<body onScroll="scrollFunction()">
     <header>
         <a href="#" class="logo">St. Theresita's Academy</a>
         <ul>
@@ -71,24 +74,5 @@
             Eligendi necessitatibus deserunt similique accusantium mollitia molestias temporibus 
             unde! Quas voluptate earum, voluptatem corrupti odit aliquam provident maiores nulla tempore?</p>
     </div>
-
-    <script>
-        let sky = document.getElementById('sky');
-        let clouds = document.getElementById('clouds');
-        let facade = document.getElementById('facade');
-        let text = document.getElementById('text');
-        let btn = document.getElementById('btn');
-        let students = document.getElementById('students');
-
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY;
-            sky.style.top = value * 0.25 + 'px';
-            clouds.style.top = value * 1.05 + 'px';
-            facade.style.top = value * 0.5 + 'px';
-            students.style.left = value * -3 + 'px';
-            text.style.marginRight = value * 3.6 + 'px';
-            text.style.marginTop = value * 1.05 + 'px';
-        })
-    </script>
 </body>
 </html> 
