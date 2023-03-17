@@ -164,7 +164,7 @@ section img#students {
 
 .clouds {
     animation-name: cloud;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
