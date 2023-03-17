@@ -122,16 +122,23 @@ section img#students {
 .sec {
     position: relative;
     padding: 100px;
+    min-height: 100vh;
     background-color: #0a0142;
 }
+.sec-admission {
+    position: relative;
+    padding: 100px;
+    min-height: 100vh;
+    background-color: #7f6ef3;
+}
 
-.sec h2 {
+.sec h2 , .sec-admission h2{
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #fff;
 }
 
-.sec p {
+.sec p, .sec-admission p {
     font-size: 1em;
     color: #fff;
 }
